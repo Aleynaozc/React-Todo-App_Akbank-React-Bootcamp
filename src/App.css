@@ -1,0 +1,286 @@
+.container {
+  position: relative;
+  top: 50px;
+  border-radius: 20px;
+  width: 900px;
+  margin: auto;
+  background-color: #f0daff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.addButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+
+}
+
+.addBtn {
+  border-radius: 10px;
+  width: 120px;
+  padding: 10px;
+  background-color: purple;
+  color: white;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.filters_select {
+  width: 20%;
+  border: none;
+  background-color: #f0eeee;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.todoList__container {
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #7b00005c;
+}
+
+.modal {
+  position: absolute;
+  margin-top: 55px;
+  width: 900px;
+  max-width: 900px;
+  height: 535px;
+  max-height: 535px;
+
+
+}
+
+.close-btn {
+
+  background-color: transparent;
+  margin-left: 380px;
+  border: none;
+}
+
+.close-btn:hover {
+  color: #9a0505;
+}
+
+.fa-xmark {
+  font-size: 20px;
+}
+
+.modal-body {
+  position: absolute;
+  z-index: 9999;
+  width: inherit;
+  height: inherit;
+  border-radius: 10px;
+}
+
+.split {
+ height: 515px;
+  width: inherit;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width:31.3%;
+  left:270px;
+  background-color: rgba(37, 95, 134, 0.477);
+}
+
+.right {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width:31.3%;
+   right: 270px;
+  background-color: rgba(128, 0, 128, 0.517);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.todoModalForm__container {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #afa6a7;
+  background-color: #f0eeee;
+  color: black;
+  font-size: 17px;
+}
+.form-control_modal{
+  width:30%;
+  border-radius: 10px;
+  border: 1px solid #afa6a7;
+  background-color: #f0eeee;
+  color: black;
+  font-size: 17px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.form-control.input {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.form-control.textarea {
+  height: 50px;
+}
+
+.form-control::placeholder {
+  color: #7b00005c;
+  font-family: 'Courgette', cursive;
+}
+
+
+
+.addCategory {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+  background-color: #f0eeee;
+  color: #7b00005c;
+  font-family: 'Courgette', cursive;
+
+}
+
+
+.save-btn {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 160px;
+  height: 35px;
+  background-color: #ee9b9bac;
+  color: #7b00005c;
+  font-family: 'Courgette', cursive;
+  border: 1px solid #a9817a;
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.save-btn:hover {
+  color: #7b0000bd;
+
+}
+
+.todos {
+  width: inherit;
+  padding-left: 0;
+  height: 550px;
+  max-height: 440px;
+  overflow-y: auto;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  margin-top: 18px;
+  height: 76px;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(254, 255, 255, 0.731), #f0e6dd);
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+}
+
+.todo-item-check {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #7b0000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 20px;
+
+}
+
+.todo-item-details {
+  width: 290px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.todo-item-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #7b0000;
+  margin-left: 30px;
+
+}
+
+.todo-item-desc {
+  display: block;
+  width: 220px;
+  margin-left: 30px;
+  font-size: 13px;
+  color: #7b0000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.fa-trash {
+  cursor: pointer;
+  font-size: 15px;
+  color: #a02b2b;
+}
+
+.delete-btn {
+  margin-right: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.fa-pen {
+  cursor: pointer;
+  font-size: 15px;
+  color: #a02b2b;
+}
+
+
+
+
+.deleteCat{
+  position: relative;
+  right: 20px;
+  float: right;
+ 
+}
